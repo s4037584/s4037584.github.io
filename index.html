@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Pablitul Home Page</title>
+   <meta charset="utf-8" name="Pablo-Pic" content="width=device-width, initial-scale=1">
+   <style>
+   img {
+      display:block;
+      margin-left: auto;
+      margin-right: auto;
+   }
+   h1{
+      font-family: fantasy;
+      font-size: 4rem;
+      padding: 0.5rem;
+      text-align: center;
+   }
+   .button {
+  display: inline-block;
+  padding: 15px 15px;
+  font-size: 32px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: darkgray;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: gray}
+
+.button:active {
+  background-color: gray;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.container { 
+  height: 150px;
+  position: relative;
+  border: 2px double lightgrey;
+  background-color: beige;
+}
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+   </style>
+   </head>
+   <body>
+       <header>
+         <h1>Welcome to my website</h1>
+         <div class="container">
+         <div class="center">
+         <button class="button" onclick="myFunction()">CLICK ME</button>
+         <p id="demo"></p>  
+         </div></div>
+       </header>
+       <img src="camina.gif" alt="Pablo Logo" class = "img" width="400" height="400">
+       <hr>
+       <script>
+         function myFunction() {
+            let text;
+            let person = prompt("Please enter your name:", "");
+            if (person == null || person == "") {
+                text = "Please enter a valid name!";
+                document.getElementById("demo").innerHTML = text;
+            } 
+            else {
+               text = "Sorry " + person + ", you have been hacked!";
+               let counter = 5;
+               const intervalId = setInterval(function(){
+               document.open();
+               document.write(person + " you have " + counter + " seconds");
+               document.body.style.fontSize = '6em';
+               document.body.style.backgroundColor = 'blue';
+               counter -= 1;
+               if (counter < 0){
+                  clearInterval(intervalId);
+                  document.open();
+                  document.write("Time is UP! " + text);
+                  document.body.style.fontSize = '6em';
+                  document.body.style.backgroundColor = 'red';
+                } 
+               },1000);   
+              }
+         }
+      </script>
+    </body>
+</html>
