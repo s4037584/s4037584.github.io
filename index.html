@@ -62,32 +62,45 @@
          <p id="demo"></p>  
          </div></div>
        </header>
-       <img src="camina.gif" alt="Pablo Logo" class = "img" width="400" height="400">
+       <img id="myImage1" src="fuego.gif" alt="Pablo Logo" class = "img" width="600" height="400">
+       <audio id="myAudio"><source src="alarm1.WAV" type="audio/WAV"></audio>
        <hr>
+       <!--****Comentario: Estos botones permiten cambiar las fotos de la portada y hacer sonar la alarma**** 
+      <button class="button" onclick="document.getElementById('myImage1').src='camina.gif'">Camina</button>
+       <button class="button" onclick="document.getElementById('myImage1').src='death.png'">Death</button>
+       <button class="button" onclick="playAudio()" type="button">Play Alarm</button> -->
        <script>
+        var x = document.getElementById("myAudio"); 
+        function playAudio() { 
+        x.play(); 
+        } 
          function myFunction() {
             let text;
-            let person = prompt("Please enter your name:", "");
+            let person = prompt("Please enter your name:", "Friend");
             if (person == null || person == "") {
                 text = "Please enter a valid name!";
-                document.getElementById("demo").innerHTML = text;
+                document.getElementById("demo").innerHTML = text;               
             } 
             else {
                text = "Sorry " + person + ", you have been hacked!";
                let counter = 5;
                const intervalId = setInterval(function(){
                document.open();
-               document.write(person + " you have " + counter + " seconds");
+               document.write(person + " you have " + counter + " seconds to ACT!");
                document.body.style.fontSize = '6em';
                document.body.style.backgroundColor = 'blue';
                counter -= 1;
                if (counter < 0){
                   clearInterval(intervalId);
+                  alert('Your device has been hacked!');
                   document.open();
-                  document.write("Time is UP! " + text);
+                  document.write("Time is UP! ");
                   document.body.style.fontSize = '6em';
-                  document.body.style.backgroundColor = 'red';
-                } 
+                  document.body.style.backgroundColor = 'darkred';
+                  document.write('<br><img src="death1.gif" width="400px" height="400px"><br>');
+                  playAudio();
+                  document.write(text);
+                  } 
                },1000);   
               }
          }
