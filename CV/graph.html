@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+<body>
+<div id="myChart" style="width:600px; max-width:600px; height:400px;">
+</div>
+<script>
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+function drawChart() {
+// Set Data
+const data = google.visualization.arrayToDataTable([
+  ['Area', 'Years'],
+  ['Tertiary Education',6.5],
+  ['IT Hekp Desk',2],
+  ['Primary and Secondary Teacher',2],
+  ['Environmental Volunteer',2],
+  ['Database Consultant',1.5],
+  ['Industrial Maintenance Technician',2]
+]);
+
+// Set Options
+const options = {
+  title:'EXPERIENCE BY FIELD'
+};
+
+// Draw
+const chart = new google.visualization.PieChart(document.getElementById('myChart'));
+chart.draw(data, options);
+}
+</script>
+</body>
+</html>

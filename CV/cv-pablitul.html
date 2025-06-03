@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pablo Acosta Resume</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link href="pablitul.css" rel="stylesheet">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+  <a href="../index.html"><img src="images/arrow_left.png" alt="Home" width="50" height="60"></a>
+  </head>
+  <body>
+    <!-- Grafico tipo pastel -->
+    <script>
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+      // Set Data
+      const data = google.visualization.arrayToDataTable([
+        ['Area', 'Years'],
+        ['Tertiary Education',6.5],
+        ['IT Help Desk',2],
+        ['Primary and Secondary Teacher',2],
+        ['Environmental Volunteer',2],
+        ['Database Consultant',1.5],
+        ['Industrial Maintenance Technician',2]
+      ]);
+      
+      // Set Options
+      const options = {
+        title:''
+      };
+      
+      // Draw
+      const chart = new google.visualization.PieChart(document.getElementById('myChart'));
+      chart.draw(data, options);
+      }
+      </script>
+    <!-- Estilo de la foto y titulo -->
+    <!--<style>
+      /* .contenedor {
+      display: flex;
+      flex-direction:row;
+      gap: 2em;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .item1 {
+      font-size:x-large;
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 100px;
+    }
+    .item2 {
+      font-size:medium;
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 80px;
+    }
+    .item0 {
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis: 250px;
+    }
+    /* .contenedor1 {
+      display: flex;
+      flex-direction:row;
+      justify-content:flex-start;
+      align-items:self-start;
+    }
+    .item3 {
+      flex-grow: 0;
+      flex-shrink: 2;
+      flex-basis:auto;
+    } */ 
+    /* .w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
+    .w3-round-small{border-radius:2px}.w3-round,.w3-round-medium{border-radius:4px}.w3-round-large{border-radius:8px}.w3-round-xlarge{border-radius:16px}.w3-round-xxlarge{border-radius:32px}
+    .w3-container,.w3-panel{padding:0.01em 16px}.w3-panel{margin-top:16px;margin-bottom:16px}
+    .w3-blue,.w3-hover-blue:hover{color:#fff!important;background-color:#2196F3!important}
+    .w3-green,.w3-hover-green:hover{color:#fff!important;background-color:green!important}
+    .w3-yellow,.w3-hover-yellow:hover{color:#fff!important;background-color:rgb(196, 148, 28)!important} */
+      </style>-->
+       <div class="container">
+        <!-- Foto y Nombre -->
+        <div class="contenedor">
+          <div class="item0">
+          <img class="mr-4 rounded-circle img-thumbnail" src="images/Foto_perfil.png" alt="Foto_perfil"></div>
+          <div class="item1">Pablo Moises Acosta Luque</div>
+          <div class="item2"> Download CV <a href="CV_Pablo_Acosta.pdf" download="">
+              <img class="mr-4 rounded-circle img-thumbnail" src="images/Download-Icon.png" alt="Download" width="44" height="44"></a></div>
+        </div>
+        <hr>
+        <!-- Parrafo de Perfil -->
+        <div class="container" style="border: double;">
+        <div class="row">
+        <div class="col-md-8 col-sm-12">
+          <div class="media">
+            <div class="media-body">
+              <p><h5 class="mt-0">Master of Environment, Electronics Engineer, Teacher and Cybersecurity Student</h5></p>
+              <p style="text-align:justify;">I have extensive experience as an Electronics Engineer in Ecuador, both in Industry and in Tertiary Education. I am currently studying a Certificate IV in Cyber Security at RMIT University to expand my knowledge, which I will complete in June 2024.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="row justify-content-md-around m-1">
+            <address>
+              <strong>Pablo Acosta</strong><br>
+              Sunbury, Victoria<br>
+              Melbourne - AUSTRALIA<br>
+              <abbr title="Email">Email: </abbr>s4037584@student.rmit.edu.au<br>
+              <a href="https://www.linkedin.com/in/pablo-moises-acosta-luque-062504ba">LinkedIn Profile</a>
+            </address>
+          </div>
+        </div>
+      </div>
+        </div>
+        <hr>
+        <!-- Educación -->
+        <div class="row">
+        <div class="col-md-8 col-sm-12">
+          <h1><span class="badge badge-primary">Education</span></h1><a href="linea_tiempo.html"><b><u>SEE THE TIME LINE</u></b></a>
+          <p style="text-align:justify;">I have studied in 5 different countries: Australia, Spain, Ecuador, China and India. I possess a Master Degree in Environment, a Bachelor Degree in Electronics Engineering and currently studying a Certificate IV in Cyber Security. I have also taken special training courses in Solar Energy and IT.</p>
+          <p style="text-align:justify;"></p>
+          <hr>
+          <div class="row">
+            <div class="col-6">
+              <h5>RMIT University</h5>
+            </div>
+            <div class="col-6">
+              <h6 class="text-right"><span aria-hidden="true"></span> Jun 2023 - Present</h6>
+            </div>
+          </div>
+          <h5><span class="badge badge-secondary">Certificate IV</span></h5>
+          <p><strong>Certificate IV in Cyber Security</strong></p>
+          <div class="row">
+            <div class="col-6">
+	    <h5>The University of Melbourne</h5>
+            </div>
+            <div class="col-6">
+              <h6 class="text-right"><span aria-hidden="true"></span> Mar 2014 - Mar 2016</h6>
+            </div>
+          </div>
+          <h5><span class="badge badge-secondary">Masters</span></h5>
+          <p><strong>Master of Environment - Energy Studies</strong> (1.5 years at the University of Melbourne, Australia and 6 months at the Autonomous University of Madrid, Spain)</p>
+          <div class="row">
+            <div class="col-6">
+              <h5>Army Polytechnic School- Ecuador</h5>
+              </div>
+              <div class="col-6">
+              <h6 class="text-right"><span aria-hidden="true"></span> Feb 1999 - Dec 2006</h6>
+            </div>
+          </div>
+          <h5><span class="badge badge-secondary">Bachelors</span></h5>
+          <p><strong>Electronics Engineer - Automation and Control</strong></p>
+          <div class="row">
+            <div class="col-6">
+              <h5>GNERI/UNIDO - China</h5>
+            </div>
+            <div class="col-6">
+              <h6 class="text-right"><span aria-hidden="true"></span> Aug 2009 - Oct 2009</h6>
+            </div>
+          </div>
+          <h5><span class="badge badge-secondary">Certificate</span></h5>
+          <p><strong>Training Course on Solar Energy Application Technology</strong> at Energy Development Council, Gansu Natural Energy Research Institute (GNERI)/UNIDO International Solar Energy Center for Technology Promotion and Transfer (UNIDO-ISEC)</p>
+         <div class="row">
+	 <div class="col-6">
+         <h5>NIIT - India</h5>
+            </div>
+            <div class="col-6">
+              <h6 class="text-right"><span aria-hidden="true"></span> Jan 2008 - Apr 2008</h6>
+            </div>
+	   </div>
+	 <div class="row">
+        <div class="col-6">
+	<h5><span class="badge badge-secondary">Certificate</span></h5></div>
+	<div class="col-sm-12">
+	<p><strong>Certificate Program in Essential IT Skills</strong> Sponsored by the Ministry of External Affairs of India</p></div>
+	</div>
+        </div></div>
+        <hr>
+        <!-- Barras de Skills -->
+        <div class="row">
+          <div class="col-md-8 col-sm-12">
+          <h1><span class="badge badge-primary">Skill Set</span></h1>
+          <p><div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-container w3-green w3-round-xlarge" style="width:100%">Teaching</div>
+            </div></p>
+          <p><div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-container w3-green w3-round-xlarge" style="width:98%">Electronics - Robotics</div>
+            </div></p>
+            <p><div class="w3-light-grey w3-round-xlarge">
+              <div class="w3-container w3-green w3-round-xlarge" style="width:98%">Programming: C++, Python</div>
+              </div></p>
+            <p><div class="w3-light-grey w3-round-xlarge">
+                <div class="w3-container w3-green w3-round-xlarge" style="width:98%">IT: Windows, MAC, Linux, Office</div>
+                </div></p>
+            <p><div class="w3-light-grey w3-round-xlarge">
+             <div class="w3-container w3-blue w3-round-xlarge" style="width:90%">Solar Energy</div>
+             </div></p>
+             <p><div class="w3-light-grey w3-round-xlarge">
+              <div class="w3-container w3-blue w3-round-xlarge" style="width:80%">HTML, CSS, Javascript</div>
+              </div></p>
+              <p><div class="w3-light-grey w3-round-xlarge">
+                <div class="w3-container w3-blue w3-round-xlarge" style="width:80%">Cybersecurity - Networking</div>
+                </div></p>
+             </div>
+             </div>
+        <hr>
+          <div class="row">
+          <div class="col-md-8 col-sm-12">
+            <div class="media">
+              <div class="media-body">
+                <h1><span class="badge badge-primary">Work Experience</span></h1>
+                <p><a href="linea_tiempo.html"><b><u>SEE THE TIME LINE</u></b></a></p>
+                <p style="text-align:justify;">I have worked in different places and countries such as the Galapagos Islands, Quito-Ecuador, and Kampala-Uganda</p>
+                <p style="text-align:justify;">First, I worked as an Industrial Maintenance Technician in a Milk Factory in Quito, and then as a Teacher in Computer Science and Mathematics in the Galapagos Islands and as a Tertiary Teacher in Quito, teaching subjects such as Robotics , Microcontrollers and Programmable Logic Controllers (PLC).</p>
+                <p style="text-align:justify;">I have volunteered as an IT Technician for the Charles Darwin Foundation in the Galapagos Islands and also I have worked as an Intern for the Ministry of Energy in Uganda, Africa.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="row justify-content-md-around max-width">
+              <div class="container">
+              <p><h5 style="text-align: center;">Experience by Field</h5>
+                <div id="myChart" style="width:400px; max-width:600px; height:300px;">
+                </div></p>
+              </div>
+          </div>
+          </div>
+        </div>
+        <hr>
+        <!-- Experiencia detallada ******-->
+      <div class="row">
+        <div class="col-sm-4 col-md-8">
+        <div class="row">
+            <div class="col-6">
+              <h5>National Secretariat of Higher Education, Science, Technology and Innovation of Ecuador (Senescyt)</h5>
+            </div>
+            <div class="col-6">
+              <h6 class="text-right"><span aria-hidden="true"></span>Quito, Oct 2016 - Jan 2023</h6>
+            </div>
+            <div class="col-12">
+              <h5><span class="badge badge-secondary">Tertiary Teacher</span></h5>
+              <p><strong>Electronics Teacher</strong></p>
+              <ul>
+                  <li>Robotics</li>
+                  <li>Microcontrollers</li>
+                  <li>Programmable Logic Controllers (PLC)</li>
+              </ul>
+              </div>
+              </div>
+          <div class="row">
+                <div class="col-6">
+                  <h5>Ministry of Energy and Mineral Development of Uganda - Renewable Energy Department</h5>
+                </div>
+                <div class="col-6">
+                  <h6 class="text-right"><span aria-hidden="true"></span>Kampala, Jun 2015 - Aug 2015</h6>
+                </div>
+                <div class="col-12">
+                <h5><span class="badge badge-secondary">Intern</span></h5>
+              <p><strong>Researcher in Solar Energy Products</strong></p>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+	    <h5>Hansei International Christian Academy</h5>
+            </div>
+            <div class="col-6">
+              <h6 class="text-right"><span aria-hidden="true"></span>Quito, Jun 2013 - Oct 2013</h6>
+            </div>
+            <div class="col-12">
+            <h5><span class="badge badge-secondary">Substitute High School Teacher</span></h5>
+          <p><strong>Physics Teacher</strong></p>
+          <ul>
+            <li>Physics for ages between 14 and 18 years old.</li>
+          </ul></div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+	    <h5>Ministry of Agriculture of Ecuador</h5>
+            </div>
+            <div class="col-6">
+              <h6 class="text-right"><span aria-hidden="true"></span>Quito, Aug 2012 - Dec 2012</h6>
+            </div>
+            <div class="col-12">
+            <h5><span class="badge badge-secondary">Database Consultant</span></h5>
+          <p><strong>Debugging Databases for the Phytosanitary Department </strong></p>
+          </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+	    <h5>Charles Darwin Foundation</h5>
+            </div>
+            <div class="col-6">
+              <h6 class="text-right"><span aria-hidden="true"></span>Galapagos, Jan 2012 - Mar 2012</h6>
+            </div>
+            <div class="col-12">
+            <h5><span class="badge badge-secondary">Database Consultant</span></h5>
+          <p><strong>Debugging Databases in the Botanical Department</strong></p>
+          </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+	    <h5>Scalesia Foundation: Tomas de Berlanga School</h5>
+            </div>
+            <div class="col-6">
+              <h6 class="text-right"><span aria-hidden="true"></span>Galapagos, Apr 2010 - Mar 2012</h6>
+            </div>
+            <div class="col-12">
+            <h5><span class="badge badge-secondary">Secondary and Primiary School Teacher</span></h5>
+          <p><strong>Mathematics and Computing Teacher</strong></p>
+          <ul>
+            <li>Computing for ages between 8 and 17 years old.</li>
+            <li>Mathematics for 11 and 12 years old.</li>
+            <li>Gradeing Database Designer and Administrator</li>
+          </ul></div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+	    <h5>Charles Darwin Foundation</h5>
+            </div>
+            <div class="col-6">
+              <h6 class="text-right"><span aria-hidden="true"></span>Galapagos, Jun 2008 - Dec 2009</h6>
+            </div>
+            <div class="col-12">
+            <h5><span class="badge badge-secondary">Professional Volunteer</span></h5>
+          <p><strong>IT Help Desk and Environmental Education</strong></p>
+          <ul>
+            <li>Maintaining computers, printers and networking devices</li>
+            <li>Database Developer</li>
+            <li>Database Instructor</li>
+            <li>Environmental Education Instructor</li>
+          </ul></div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+	    <h5>Andina Milk Factory</h5>
+            </div>
+            <div class="col-6">
+              <h6 class="text-right"><span aria-hidden="true"></span>Quito, Feb 2006 - Dec 2008</h6>
+            </div>
+            <div class="col-12">
+            <h5><span class="badge badge-secondary">Industrial Maintenance Supervisor</span></h5>
+          <p><strong>Industrial Maintenance Engineer</strong></p>
+          <ul>
+            <li>Preventive Maintenance</li>
+            <li>Corrective Maintenance</li>
+          </ul></div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <!-- Barras con Idiomas -->
+      <div class="row">
+      <div class="col-md-8 col-sm-12">
+        <h1><span class="badge badge-primary">Languages</span></h1>
+        <p>
+        <div class="w3-light-grey w3-round-xlarge">
+          <div class="w3-container w3-yellow w3-round-xlarge" style="width:90%">English 90%</div>
+        </div></p>
+        <p>
+        <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-container w3-blue w3-round-xlarge" style="width:99.5%">Spanish 100%</div>
+        </div></p>
+      </div></div>
+      <hr>
+      <!-- Certificaciones -->
+      <div class="row">
+        <div class="col-md-8 col-sm-12">
+        <h1><span class="badge badge-primary">Certifications</span></h1>
+        </div></div>
+        <div class="row">
+          <div class="col-sm-4 col-md-8">
+          <div class="row">
+              <div class="col-6">
+                <h5>CCNA: Routing and Switching Certificate</h5>
+              </div>
+              <div class="col-6">
+                <h6 class="text-right"><span aria-hidden="true"></span>Aug 2021 - Sep 2021</h6>
+              </div>
+              <div class="col-md-12">
+                <h5><span class="badge badge-secondary">Issued by CISCO</span></h5>
+                <p>Foundation in switching operations, wired and wireless LAN configuration using security best practices, redundancy protocols, and developed problem-solving skills. Participated in practice activities and hands-on labs using Cisco hardware and the Cisco Packet Tracer tool.</p>
+                </div>
+                </div>
+        </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 col-md-8">
+          <div class="row">
+              <div class="col-6">
+                <h5>CCNA: Introduction to Networks</h5>
+              </div>
+              <div class="col-6">
+                <h6 class="text-right"><span aria-hidden="true"></span>Jun 2021 - Aug 2021</h6>
+              </div>
+              <div class="col-md-12">
+                <h5><span class="badge badge-secondary">Issued by CISCO</span></h5>
+                <p>Knowledge of networking including IP addressing, how physical data link protocols support Ethernet, can configure connectivity between switches, routers and end devices to provide access to local and remote resources. Participated in hands-on labs using Cisco hardware and Packet Tracer tool.</p>
+                </div>
+                </div>
+        </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 col-md-8">
+          <div class="row">
+              <div class="col-6">
+                <h5>Cert Prep: Word Expert - Microsoft Office (Specialist for Microsoft 365 Apps)</h5>
+              </div>
+              <div class="col-6">
+                <h6 class="text-right"><span aria-hidden="true"></span>17-08-2023</h6>
+              </div>
+              <div class="col-md-12">
+                <h5><span class="badge badge-secondary">Issued by LinkedIn Learning</span></h5>
+                </div>
+                </div>
+        </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 col-md-8">
+          <div class="row">
+              <div class="col-6">
+                <h5>Cert Prep: Excel Expert - Microsoft Office (Specialist for Microsoft 365 Apps)</h5>
+              </div>
+              <div class="col-6">
+                <h6 class="text-right"><span aria-hidden="true"></span>16-08-2023</h6>
+              </div>
+              <div class="col-md-12">
+                <h5><span class="badge badge-secondary">Issued by LinkedIn Learning</span></h5>
+                </div>
+                </div>
+        </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 col-md-8">
+          <div class="row">
+              <div class="col-6">
+                <h5>Python Essential Training</h5>
+              </div>
+              <div class="col-6">
+                <h6 class="text-right"><span aria-hidden="true"></span>03-08-2023</h6>
+              </div>
+              <div class="col-md-12">
+                <h5><span class="badge badge-secondary">Issued by LinkedIn Learning</span></h5>
+                </div>
+                </div>
+        </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 col-md-8">
+          <div class="row">
+              <div class="col-6">
+                <h5>Public Speaking Foundations</h5>
+              </div>
+              <div class="col-6">
+                <h6 class="text-right"><span aria-hidden="true"></span>03-08-2023</h6>
+              </div>
+              <div class="col-md-12">
+                <h5><span class="badge badge-secondary">Issued by LinkedIn Learning</span></h5>
+                </div>
+                </div>
+        </div>
+        </div>
+        <hr>
+        <!-- Publicaciones -->
+        <div class="row">
+          <div class="col-md-8 col-sm-12">
+            <h1><span class="badge badge-primary">Publications</span></h1>
+          </div></div>
+          <div class="row">
+            <div class="col-sm-4 col-md-8">
+            <div class="row">
+                <div class="col-6">
+                  <h5>Sustainability in terms of energy consumption in processes of incremental forming and stamping</h5>
+                </div>
+                <div class="col-6">
+                  <h6 class="text-right"><span aria-hidden="true"></span>Published 2022</h6>
+                </div>
+                <div class="col-md-12">
+                  <h5><span class="badge badge-secondary">Materials Today: Proceedings</span></h5>
+                  <p><a href="https://www.sciencedirect.com/science/article/abs/pii/S2214785321054134?via%3Dihub#!"><b><u>Link to Publication</u></b></a></p> 
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <h5>Hot incremental forming of biocomposites developed from linen fibres and a thermoplastic matrix</h5>
+              </div>
+              <div class="col-6">
+                <h6 class="text-right"><span aria-hidden="true"></span>Published 2021</h6>
+              </div>
+              <div class="col-md-12">
+                <h5><span class="badge badge-secondary">Journal of Mechanical Engineering</span></h5>
+                <p><a href="https://www.sv-jme.eu/article/hot-incremental-forming-of-biocomposites-developed-from-flax-fibre-and-a-thermoplastic-matrix/"><b><u>Link to Publication</u></b></a></p> 
+              </div>
+          </div>
+          </div>
+          </div>
+          <hr> 
+      <!-- Slideshow pictures -->
+      <h1><span class="badge badge-primary">Portfolio</span></h1>
+      <div class="contenedor">
+        <iframe src="picture_show.html" style="height: 100vmin; width: 100vmax" title="picture_show"></iframe>
+      </div>
+       </div>
+       </body>
+       <hr>
+      <!-- Portafolio de fotos -->
+      <!-- <div class="container">
+        <h2>Portfolio</h2>
+        <div class="row text-center">
+          <div class="col-sm-4 col-12 p-0"><a href="picture_show.html"><img class="img-thumbnail"  src="images/New/Lego1.jpeg" alt=""></a></div>
+          <div class="col-sm-4 col-12 p-0"><a href="picture_show.html"><img class="img-thumbnail"  src="images/New/RVM1.jpeg" alt=""></a></div>
+          <div class="col-sm-4 col-12 p-0"><a href="picture_show.html"><img class="img-thumbnail"  src="images/New/solar.jpeg" alt=""></a></div>
+        </div>
+        <div class="row text-center">
+          <div class="col-sm-4 col-12 p-0"><a href="picture_show.html"><img class="img-thumbnail"  src="images/New/Kids2.jpeg" alt=""></a></div>
+          <div class="col-sm-4 col-12 p-0"><a href="picture_show.html"><img class="img-thumbnail"  src="images/New/Solar2.jpeg" alt=""></a></div>
+          <div class="col-sm-4 col-12 p-0"><a href="picture_show.html"><img class="img-thumbnail"  src="images/New/PLC1.jpeg" alt=""></a></div>
+        -->
+      <!-- Copyright -->
+      <div class="container">
+      <footer class="text-center">
+            <div class="row">
+            <div class="col-12">
+              <p>Copyright © @pablitul. All rights reserved.</p>
+            </div>
+          </div>
+      </footer>
+      </div>
+</html>
