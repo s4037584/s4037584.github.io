@@ -52,9 +52,9 @@
   transform: translate(-50%, -50%);
 }
 .navbar {
-  background-color: #333;
+  background-color: #666;
   overflow: hidden;
-  position: fixed;
+  position: sticky;
   bottom: 0;
   width: 100%;
 }
@@ -65,9 +65,9 @@
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 20px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 32px;
 }
 
 /* Change the color of links on hover */
@@ -84,6 +84,12 @@
    </style>
    </head>
    <body>
+        <div class="navbar">
+         <a href="index.html" class="active">Home</a> 
+         <a href="CV/cv-pablitul.html">Curriculum</a>
+         <a href="CV/picture_show.html">Portfolio</a>
+         <a href="CV/linea_tiempo.html">Timeline</a>
+        </div>
        <header>
          <h1>Welcome to my website</h1>
          <div class="container">
@@ -93,12 +99,6 @@
          <button class="button" onclick="myFunction()">Cyber2</button>
          <p id="demo"></p>  
          </div></div>
-         <div class="navbar">
-         <a href="index.html" class="active">Home</a> 
-         <a href="CV/cv-pablitul.html">Curriculum</a>
-         <a href="CV/picture_show.html">Portfolio</a>
-         <a href="CV/linea_tiempo.html">Timeline</a>
-        </div>
         </header>
         <img id="myImage1" src="fuego.gif" alt="Pablo Logo" class = "img" width="600" height="400">
         <audio id="myAudio"><source src="alarm1.WAV" type="audio/WAV"></audio>
